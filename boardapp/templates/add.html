@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link type="text/css" href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<p></p>
+<div class="container container border border-5 border-dark rounded-3 p-5">
+    <h2 class="text-center"> 게시판 </h2>
+    <br>
+    <form method="post" class="container">
+        <div class="mb-3">
+            <label for="title" class="form-label">제목</label>
+            <input class="form-control" type="text" id='title' name="title" placeholder="제목 입력">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <input type="text" id='content' name="content" class="form-control" placeholder="내용 입력">
+        </div>
+        <button class="btn btn-primary" type="submit">등록</button>
+        <button class="btn btn-primary" onclick="window.location.href = '/';" type="button">취소</button>
+    </form>
+</div>
+
+</body>
+</html>
